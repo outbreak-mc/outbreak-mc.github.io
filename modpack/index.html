@@ -1,0 +1,1038 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://outbreak-mc.github.io/modpack/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="java-installation/">
+      
+      
+      <link rel="icon" href="../assets/images/classic_128.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Сборка OUTBREAK - OUTBREAK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/index.css">
+    
+      <link rel="stylesheet" href="../stylesheets/stars.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#outbreak" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="OUTBREAK" class="md-header__button md-logo" aria-label="OUTBREAK" data-md-component="logo">
+      
+  <img src="../assets/images/classic_128.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OUTBREAK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Сборка OUTBREAK
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Главная
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  Quality-of-Life сборка
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../modbreak2024/" class="md-tabs__link">
+          
+  
+    
+  
+  🎄 MODBREAK-2024
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../rules/" class="md-tabs__link">
+          
+  
+    
+  
+  Правила проекта
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OUTBREAK" class="md-nav__button md-logo" aria-label="OUTBREAK" data-md-component="logo">
+      
+  <img src="../assets/images/classic_128.png" alt="logo">
+
+    </a>
+    OUTBREAK
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Главная
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    Quality-of-Life сборка
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Quality-of-Life сборка
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="java-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Установка Java
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Установка Сборки
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Обзор сборки
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../modbreak2024/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    🎄 MODBREAK-2024
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            🎄 MODBREAK-2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../rules/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Правила проекта
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Правила проекта
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rules/staff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Примечания о работе персонала
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#latest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ссылки на скачивание
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ссылки на скачивание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Старые версии
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="outbreak">Сборка OUTBREAK</h1>
+<div class="icon-gallery centered">
+  <img alt="Fabric" src="../../assets/modpack/logos/fabric.webp" />
+  <img alt="Quilt" src="../../assets/modpack/logos/quilt.webp" />
+  <img alt="Sodium" src="../../assets/modpack/logos/sodium.webp" />
+  <img alt="Iris" src="../../assets/modpack/logos/iris.webp" />
+</div>
+
+<p>Сборка построена на базе Fabric 1.20.1 с Sodium, Iris и Quilt и призвана сделать из клиента что-то более менее играбельное и добавить эстетики.</p>
+<p>Папка mods насчитывает более 80 модов и 30+ ресурспаков, но установленные здесь моды не добавляют никаких новых предметов, а только улучшают комфорт от игры, производительность и внешний вид, сохраняя максимально ванильную стилистику. </p>
+<p>В сборке присутствуют:</p>
+<ul>
+<li>
+<p>Такие маст-хэв моды как Emotecraft, Plasmo Voice, Replay Mod.</p>
+</li>
+<li>
+<p>Множество модов на оптимизацию и все фишки из OptiFine. FPS в сборке <a href="review/#fps-ram">до 2 раз выше, чем в ванилле</a>.</p>
+</li>
+<li>
+<p>Моды на исправление недочётов клиента, как например, фикс неработающего без <code>/op</code> меню <span class="keys"><kbd class="key-f3">F3</kbd><span>+</span><kbd class="key-f4">F4</kbd></span>.</p>
+</li>
+<li>
+<p>Моды на различные удобства - просмотр шалкеров в инвентаре, показ эффектов от еды и другое.</p>
+</li>
+<li>
+<p>Эстетические улучшения - анимированная еда, улучшенная погода, круги на воде, плавное перемещение предметов и многое другое.</p>
+</li>
+</ul>
+<div class="grid cards align-link-down">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_15_3)">
+<path d="M21.8776 1.15793e-05L12.3502 16.4999L21.8776 21.9999L31.4031 16.4999L31.8172 4.78489C27.4666 2.27306 22.9774 1.15793e-05 21.8776 1.15793e-05Z" fill="#DF6277"/>
+<path d="M31.817 4.785L21.8776 22L31.4031 27.5L40.9306 11.0001C40.3806 10.0474 36.1676 7.29669 31.817 4.785Z" fill="#FB9168"/>
+<path d="M40.9302 11.0001L21.8776 22L31.4031 27.5L41.7549 22C41.7549 16.9762 41.4802 11.9525 40.9302 11.0001Z" fill="#F3DB6C"/>
+<path d="M21.8776 22V32.9999H40.9302C41.4802 32.0473 41.7544 27.0237 41.7544 22H21.8776Z" fill="#7AB392"/>
+<path d="M21.8776 22V32.9999L31.817 39.2146C36.1676 36.7028 40.3803 33.9524 40.9302 32.9999L21.8776 22Z" fill="#4B7CBC"/>
+<path d="M21.8776 22L12.3502 27.5L21.8776 43.9999C22.9776 43.9999 27.4664 41.7266 31.817 39.2146L21.8776 22Z" fill="#6F488C"/>
+<path d="M12.3502 16.5L2.82462 32.9999C3.92461 34.9052 19.6775 43.9999 21.8772 43.9999V22L12.3502 16.5Z" fill="#4D3F33"/>
+<path d="M2.825 11.0001C1.725 12.9053 1.725 31.0947 2.825 32.9999L21.8776 22V11.0001H2.825Z" fill="#7A573B"/>
+<path d="M21.8776 0C19.6776 -7.55906e-08 3.92484 9.09468 2.825 10.9999L21.8776 21.9999V0Z" fill="#99CD61"/>
+<path d="M21.88 11C20.78 11 12.9048 15.5474 12.3548 16.4999L21.88 32.9999L31.4071 16.4999C30.8571 15.5473 22.9802 11 21.88 11Z" fill="white"/>
+<path d="M12.355 16.4999L21.8803 32.9998C22.9803 32.9998 30.8575 28.4525 31.4072 27.4999C31.9572 26.5473 31.9572 17.4524 31.4072 16.4999L21.8803 21.9997L12.355 16.4999Z" fill="#DFDFDF"/>
+<path d="M12.3528 16.5C11.8028 17.4527 11.8028 26.5475 12.3528 27.5C12.9028 28.4526 20.7781 32.9999 21.8783 32.9999V22L12.3528 16.5Z" fill="#D6D2D2"/>
+</g>
+<defs>
+<clipPath id="clip0_15_3">
+<rect width="44" height="44" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</span> <strong>Установка в пару кликов</strong></p>
+<hr />
+<p>Перетащите <code>OUTBREAK.mrpack</code> в окно Prism Launcher и всё установится.</p>
+<p><a href="installation/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Подробная инструкция по установке</a></p>
+</li>
+<li>
+<p><img alt="✨" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2728.svg" title=":sparkles:" /> <strong>Обзор содержимого</strong></p>
+<hr />
+<p>Статья с описаниями и скриншотами всех особенностей сборки.</p>
+<p><a href="review/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Обзор фишек сборки</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span> <strong>Скачивание</strong></p>
+<hr />
+<p>Ссылки на скачивание и история изменений.</p>
+<p><a href="#latest"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Перейти к скачиванию</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg></span> <strong>Связь</strong></p>
+<hr />
+<p>Нужна помощь, хотите сообщить о проблеме или предложить контент в сборку?</p>
+<p><a href="https://discord.gg/fhgkRff" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Вам в наш Discord</a></p>
+</li>
+</ul>
+</div>
+<div class="grid cards">
+    <label class="zoomableimg">
+        <input type="checkbox">
+        <div>
+            <img alt="Панорама" src="../../assets/modpack/aesthetics/pano.webp">
+        </div>
+    </label>
+    <label class="zoomableimg">
+        <input type="checkbox">
+        <div>
+            <img alt="Шалкеры" src="../../assets/modpack/aesthetics/shulkers.webp">
+        </div>
+    </label>
+    <label class="zoomableimg">
+        <input type="checkbox">
+        <div>
+            <img alt="Взрывы" src="../../assets/modpack/aesthetics/epic.webp">
+        </div>
+    </label>
+    <label class="zoomableimg">
+        <input type="checkbox">
+        <div>
+            <img alt="Инструкция зельеварения" src="../../assets/modpack/gameplay/brewing-guide.webp">
+        </div>
+    </label>
+</div>
+<div class="grid cards">
+    <label class="zoomableimg">
+        <input type="checkbox">
+        <div>
+            <img alt="OwO" src="../../assets/modpack/aesthetics/ghast2-crop.webp">
+        </div>
+    </label>
+</div>
+<div class="grid cards">
+    <label class="zoomableimg">
+        <input type="checkbox">
+        <div>
+            <img alt="Better F3" src="../../assets/modpack/gameplay/f3.webp">
+        </div>
+    </label>
+    <label class="zoomableimg">
+        <input type="checkbox">
+        <div>
+            <img alt="Улучшенный снег" src="../assets/modpack/aesthetics/particle-rain-snow.webp">
+        </div>
+    </label>
+    <label class="zoomableimg">
+        <input type="checkbox">
+        <div>
+            <img alt="Книги" src="../../assets/modpack/gameplay/books-crop.png">
+        </div>
+    </label>
+    <label class="zoomableimg">
+        <input type="checkbox">
+        <div>
+            <img alt="Тыквы" src="../assets/modpack/aesthetics/pumpkins.webp">
+        </div>
+    </label>
+</div>
+
+<p>Права на моды и другой контент, находящийся в этой сборке, принадлежат их создателям. Мы не несём никакой ответственности за использование данной сборки.</p>
+<h2 id="latest">Ссылки на скачивание</h2>
+<p>Скачать иконку: <a download="logo.ico" href="../assets/modpack/download/logo.ico"><span class="twemoji"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="64" height="64" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_491_120" transform="scale(0.015625)"/>
+</pattern>
+<image id="image0_491_120" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAAwzSURBVHja5JtrcFXXdcd/a59zrq6kqzd68AbxFA/bkOIGx3FSl7TTdOpxmodnMLYJqQ2hM3XiTp3Y8QyJO6XELXWTunEgBYrrJGPXxSF2EycGCuYRKI7BYAECSYABI2yB3kLSPWevfrhCoAfiXuke+iH70505+6y993//13+ttc++oqr8Ljf3yo+uPX/d/WswQCTxXGQZyj2oHYMxe1F9Adh13f4DNweRL4FMBy6g9lXgfO93bzSfweZ55d2B5pB4Hrlj9VUAkmyzMZE12tkwn65mMC6onS2ZpQ/jOCux/reuDj7Y/ORPEOef9fLFqXQ1g5uFZBavQuRJNHjuZjLAJA+qWQrmgDZWzxeTgTtzGZE538AZswBtOYW2X3oSk7ETmDGIFQfjPk8Q/EIbaqea7NG4UxdhimajLadz6Gr9F4z3a2DCTXeBQdpYjPd9ulru1dZzOCPvwJ25FCL5CQOFszAFFfhH1qGNtXdK3viDoMtR+2997MzHRNZoW91suppxJ96DM/0hQHCA4Myv8I+9CB0Nn5HccQfALkX15bABkCsiOKAGiNyLuD/SljMjQPCm3Y8Z99mBLXU1En/vB9i6fUhsNERyNmP9B0BbEPM4Vr+rzSeR2GjciiWYEXP6mdC2s/iVP8LWv4vkjAUvaz02vhzoDEsDrgOAuhjvOeIdS7XlfUzhdNxZy5DYjZkZnHoN/8RPAEFyxlaiQS1B8GfaXocz8uO4M5eByRjcRs3L+NWvgBNFYqOOYuNLQXfeBAD0ClXXatv5WfjtuOWfw5myMCX8taUWv3IttqEqwYagA3f6YkzZncnbaDhCvHIN2nwGyZsIxnwHDb6dbgBMH3W+DzF7tKF6lkRyicxbkfLiASSnHO/jq3Anfx5t+wDtbMY2HgWC5G0UzCDyidU44+5Gm6rRzuYVGG8XMPKabjMQ+QGqB1Hdj8jqPs9T0YDHShDngrbV4RR/DHf2V29I1WSavXQI/7212PoDuLMewZ36UOo26nbiV65DjYdEC3ai8bsQ50FU1mn7BTexyQriIFmlH0KwrDuvSIEBIk9oez0mbzLurV9Ly+IBTOEteLf8JURLsHV7IehI3UbZJ/HuWIWYKHS1fhInYwddbRu14YTrlMzFm/s3eHMew+RPRi9VleDHN2HcNaBu8mFQZRZ+B6ZgavpDTe4ETGw0+B3gt4ITTd1GZhmmqIKg7jfQ1XwXWNxbHsYZ+6dXgSqaQ1D9Y/yaV8GJPSKxsk9g438FbLtxImSlDXHA+mkHQG0nWAvigThDshHUvIitP4B2NmJiY4jMX9lr8T2Z1uT7idy+AsmIoQ3HZ6JsRZy/vV5Kfa0IKhaw6S+ORDXho0MBr+008f1P0XXwh9i2C3hTvog3f9WgIVkKZhO58x9xxnwKbapBOxqfwmTsACoGzQSFcFpi7ZIyCPbcr4gf3Yg2nsYpm4db8RCmaE6SqEdxZz+KKZmHf2Q92lh7l+RNOAB2Oarr+wEgCGEVxgKIgqYAsX98A/6RjWAiuBWLcCuWDEmYTekdRAqmET/8PPbC2xmSM34dbsYsNHistwsoYCUcHoiAStKVra3bgX/0RSRnApF538KdOcyQHCnC+9hTuBWL0M6LYP2vA5/towHdiw/xfEQ0OXCDc29BYPGmLcSM/FTaxncmfgF33B+hrXUAj/RnQFiL79GAJLsHPuJmJVV7pLwJ+RWgFpSc/ucBKiGDkCTI4iXY4nekfx5+R6IAV+nswwAJNxZo8ralZyNC2A1VsFfn0t8FQtOA5NklvTYkLD1iAAAIcdBUwL3CgFBAuBKR+jIg5Ahw1c0k/X2HfGrc90wwTBakspsaogvotTlPXxG8GVEgJRfQ0DfDvWkagHTHX3t1yPZzaNs5JFqA5EzprdQqiQwyLAC6QXB7K29Ikad7UaIC0UIIWokfXYf9YC/afh7JyMcU34o77UEkZxJIJFE+a0iLtwMfiCSdqg6pGLIu4sawF3bhn/wZ9uxuzIhbcUp/H207T3B6G7ahGnfGou68PzPEmCw9GuD2zRFMGG7g5YOXhY20Erz7LLRewpn057jTH0Ayy0A7keM/xa96mfjB5zAFM5CsHMTJCy0HkAE1ICQRtBffwUYvYTs+RMjEnft1nAn3XDOjDNxpizEFM/CPbECba9FYDkHjb3GKxocQBaRHX90hhalUjrJqX8I/8Qra1YpTPBd31sPXLXJMye1ECmfgv7cW/9wO4sc2oJfP4Fb8BTjZoaTloeUB2n4G/+gGgtNbIJKPN20hztQHbvyiG8O97THMiFuIH30B/9hLBE01eNMXY4rmpi0CSD8NSKML2PNbiVduwDbU4pT+Hu7MJZii21I7yRmzgEjhNPzKdQTv/w9dTSvwpnweZ8ritOYk/V1Ah7v4bXT970ogA2/qfbgzvwJubGhilTUWb963MQVTiR/fRPzwOhTFnfLlNLCgbzGUjuozaMev/i8wMbzZS3BvfXTIi+91kjN5IZF5jyO5kwmqf442V6UtGzT9qqRhaIC2nUFb6nAKK3DKv5BWMTXFt+OUzEHbLmGbzw47CvRngE1HJiiJOjtNn9X6m48kTnOMN0w/HZABaTgQEpOQFRuEA4C1oA4yzEglDMQAJQux4HjDpBegJhwA0lAmi5NB9xcKrzcADpdMVxT5oHWYuxRyST3cUN3ehPgAYvswwH5PpAw9Xom+t3OY/hVmST0MP60/jj3035BdDPB6bwBE95LDGrJj6Js/Rrf/dIh1nwmtqkywa2gM0Ko38H/5TMJGNHpY0ef7pMKCjV5eZrJjDXjjvqkHt8OFWrh7EVI8PsVdCq+sJkjRdlcjwe6N6MnfInmjIDNzs6r/IOAPkAgJ2OAJDH/M6ImntPEjdNNq9J1fJDdYNDfhWSFqgAQWMnKS6356H8Hm76CnDyMlkwKi0a+q9e8Fmnvyi+u8+msCfy4jyv6TWB66+xXsa/8ELR8NPuDJt8HXIV+CSCIdQrxsOHngBv3i2N+sI9jyHBqAlIzfC8FcVfvDvvoxWLxqIIh/iYzIEh01uVXrThBsWonW7B0gBe7AvrUWu38TRAuAkABQhdgItGof9tXvQtO5/l3qqwh+vgJ7bBdSXA65ec+o7ZwPHBoY0hsKj25A/dsoGbsFz8W+uQa7awN0JFikHxwmeO1pbPVepGAUiOOHccukJwwGFgpHofVnCDavQo9vT4Qe9dHDmwl++Q/Q0oKUllfh8Gls8I3Booab5MA1BPHPEMv5JpnZf6/V+wg+OgmZ2WjDWQSDlE7cqia+kbiuRcUNB4ArZ3n+4xSPGk1n06N270vIiT2AxV48g8RK0GjGv2M7lwvm8g2u7KdwW1wBa1fhcCdFo7YRdFhtPI9k5TeTW/gM2rUAoztQiYYWBRQIDOroKbTra2RmLSW/tFZbL6JtDUjhyMNkuPdh/S+DXE7GpjsEGu6G4A+JRsuFzEJUa7BBAw6gTBErPR8eQ3MDdCyeBV/WYnQdWbGZibBmj6Dafd0nuUm4w5hILWhtr3nZ7otQXjgMUOMkbpxZgxqLGAGVAPTQUAs5k56JcfVTljFIkw3HBfwAVQE0EWbM8Mcx6XHMbro59l2xhcipRvTgm+ldff1ROHsMk1kE6H60GwZHh5V4pQGAbisCIPW4PKG5ueiOn6Hb/oNUbohfNxJXvo7/xrOoOBDJeAPL9p7Ca5jNTbdAqRdfJdmZubijn9BDu6DuJNy9ECmbnLq9yxcJ9mxATx1C8kdDZnSzqr/w2vNLRZFhfERN/8mFCqh9EocFjC6v0pZGdNOz6Duvp2bm/X34rz2Nnq1CSiddJhr5ilr/XpT29CbXoYUr3UoQn0NhyUZyR6C7X8W+vhpaP7zBiz527waCLf+KqIMUj9uhEsxRtevDqS7CbZex/mKi3v2MLG/WczUEm1ahJ94aGLMLlYk8/uhbSNEEyMl7WrXz0yhVYU0wbACuHGb+BIK5lI7ZihMh2LIeu/156Gi82uXdVwjeWA0tTUhJ+Qlc/QPVYEW4lzbSLYKD62MNgb+A7KwnJav87/TkQYLG88jISdB4AVt3HHLL0IzoC9j4coG2kNd+ExnQmw0rkeB2isfsId6BrdqNNp5HRoytkYj3Oaz/ENB2s6bj8v/T9mP9RUSzvihZsTmoPakabBLhbSH823q987jf8b/P/98AAVNVP5oMLBcAAAAASUVORK5CYII="/>
+</defs>
+</svg>
+</span> logo.ico</a> </p>
+<details class="bug">
+<summary>Сейчас в разработке</summary>
+<p><strong>Скачать:</strong> Эта версия ещё не вышла. Здесь показаны промежуточные изменения, которые, вероятно, войдут в выпуск. Вы можете предложить свои изменения или попросить на тестирование промежуточную версию в <a href="https://discord.gg/fhgkRff">Discord</a>.</p>
+<p><strong>Изменения:</strong></p>
+<p><strong>Новое:</strong></p>
+<ul>
+<li>
+<p>Мод <a href="https://www.curseforge.com/minecraft/mc-mods/itemswapper">ItemSwapper</a>, добавляющий удобные палитры предметов на <span class="keys"><kbd class="key-r">R</kbd></span>, позволяющие мгновенно выбрать предмет, не заходя в инвентарь, а в творческом режиме - взять похожий по тематике предмет из палитры.</p>
+</li>
+<li>
+<p>Мод <a href="https://modrinth.com/mod/smooth-scrolling-refurbished">Smooth Scrolling Refurbished</a> - плавная прокрутка в списках.</p>
+</li>
+</ul>
+<p><strong>Исправления, улучшения, обновления:</strong></p>
+<ul>
+<li>Исправлен неправильный порядок ресурспаков, из-за которого не работал тёмный фон.</li>
+</ul>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">1.2.0-rc.2 (нестабильная версия)</p>
+<p><strong>Скачать:</strong> <a href="https://drive.google.com/file/d/1dwY3hg2Bd95TMFzUT57I-Z-qju1-gvgc/view?usp=sharing" target="_blank">OUTBREAK 1.2.0-rc.2.mrpack</a></p>
+<p><strong>Изменения:</strong></p>
+<p>Проведена оптимизация: добавлено ещё несколько оптимизирующих модов, FPS в одиночной игре немного вырос и игра в целом стала ощущаться стабильнее и плавнее. Также добавлено несколько QoL-модов.</p>
+<p><strong>Новое:</strong></p>
+<p>Оптимизация:</p>
+<ul>
+<li>Мод <a href="https://modrinth.com/mod/exordium">Exordium</a> - экономит FPS, отрисовывая интерфейс не каждый кадр.</li>
+<li>Мод <a href="https://modrinth.com/mod/c2me-fabric">C2ME</a> - улучшает производительность чанков.</li>
+<li>Мод <a href="https://modrinth.com/mod/hold-that-chunk">Hold That Chunk</a> - улучшает логику отгрузки чанков.</li>
+<li>Мод <a href="https://modrinth.com/mod/memoryleakfix">Memory Leak Fix</a> - исправляет некоторые проблемы с оперативной памятью.</li>
+<li>Мод <a href="https://modrinth.com/mod/threadtweak">ThreadTweak</a> - оптимизация работы с потоками CPU.</li>
+<li>Мод <a href="https://modrinth.com/mod/modernfix">ModernFix</a> - пак разных фиксов и оптимизаций.</li>
+</ul>
+<p>Прочее:</p>
+<ul>
+<li>Мод <a href="https://modrinth.com/mod/chatpatches">Chat Patches</a> - сохранение истории чата на <span class="keys"><kbd class="key-arrow-up">Up</kbd></span>, более длинная история, дубликаты сообщений как одно и другие удобные улучшения чата.</li>
+<li>Мод <a href="https://www.curseforge.com/minecraft/mc-mods/capes">Capes</a> - позволяет вам видеть плащи от OptiFine и других модов.</li>
+<li>Мод <a href="https://modrinth.com/mod/serverpingerfixer">Server Pinger Fixer</a> - меню серверов лучше пингует сервера и не зависает.</li>
+<li>Мод <a href="https://modrinth.com/mod/stendhal">Stendhal</a> - улучшенный интерфейс книг с цветом и форматированием.</li>
+<li>Мод <a href="https://modrinth.com/mod/better-third-person">Better Third Person</a> - улучшенная камера от третьего лица. Теперь вы можете смотреть на себя со всех сторон.</li>
+<li>Мод <a href="https://modrinth.com/mod/borderless-mining">Borderless Mining</a> - заменяет полноэкранный режим на режим окна без рамки, что позволяет без лагов переключаться между окнами.</li>
+<li>Мод <a href="https://modrinth.com/mod/mica">Mica</a> - стильная акриловая рамка окна в Windows 11.</li>
+<li>Мод <a href="https://modrinth.com/mod/chat-calc">Chat Calc</a> - введите в чат математическое выражение (без пробелов) и рядом высветится ответ.</li>
+</ul>
+<p><div style="opacity: 60%" markdown>
+<strong>Добавлено, но <a href="review/#enabling-mods" target="_blank">не активно</a> по умолчанию:</strong></p>
+<ul>
+<li><a href="https://modrinth.com/mod/3dskinlayers">3D Skin Layers</a> - Переводит второй слой скина из 2D в 3D.
+</div></li>
+</ul>
+<p><strong>Исправления, улучшения, обновления:</strong></p>
+<ul>
+<li><a href="https://modrinth.com/plugin/plasmo-voice">Plasmo Voice</a> выключен в лаунчере по умолчанию, так как вызывает ошибки в консоли, если нет микрофона.</li>
+<li><a href="https://modrinth.com/mod/cameraoverhaul">CameraOverhaul</a> раньше был просто выключен в игре, а теперь выключен в лаунчере.</li>
+<li>Удалён мод <a href="https://modrinth.com/mod/morechathistory">More Chat History</a> (заменён на <a href="https://modrinth.com/mod/chatpatches">Chat Patches</a>).</li>
+<li>Удалён неработавший мод <a href="https://modrinth.com/mod/bounced">Bounced</a> (несовместим с модом на меню).</li>
+<li>Скрыты кнопки мода <a href="https://www.curseforge.com/minecraft/mc-mods/no-chat-reports">No Chat Reports</a>.</li>
+<li><a href="https://modrinth.com/mod/vectorientation">Vectorientation</a> решено было включить по умолчанию.</li>
+<li>Обновлены все моды до последних версий. Самые заметные изменения:<ul>
+<li>Звуки шагов стали мягче и приятнее.</li>
+<li>Над чатом теперь есть выбор эмоджи.</li>
+</ul>
+</li>
+</ul>
+</div>
+<h4 id="_1">Старые версии</h4>
+<details class="warning">
+<summary>1.2.0-rc.1 (нестабильная версия)</summary>
+<p><strong>Скачать:</strong> <a href="https://drive.google.com/file/d/1sFHmz7BIAlr0YXqJzhp41vpFxhMekDAx/view?usp=sharing" target="_blank">OUTBREAK 1.2.0-rc.1.mrpack</a></p>
+<p><strong>Изменения:</strong></p>
+<p><strong>Новое:</strong></p>
+<ul>
+<li>Мод <a href="https://modrinth.com/mod/replaymod">Replay Mod</a> для записи повторов и <a href="https://github.com/KosmX/emotes-replaymod-compat/releases">фикс его совместимости с Emotecraft</a>.</li>
+<li>Мод <a href="https://modrinth.com/mod/command-macros">Command Macros</a>, позволяющий назначать команды на клавиши. Очень удобен для строительства с WorldEdit, или модерации с CoreProtect.</li>
+<li>Мод <a href="https://github.com/Ladysnake/Effective/pull/216">Effective</a> - всплески на воде, пена и шум от водопадов и другие эстетичные эффекты.</li>
+<li>Мод <a href="https://modrinth.com/plugin/plasmo-voice">Plasmo Voice</a>, позволяющий использовать голосовой чат на серверах, где это поддерживается.</li>
+<li>Мод <a href="https://modrinth.com/mod/ugly-scoreboard-fix">Ugly Scoreboard Fix</a>, скрывающий цифры по краям скорбордов.</li>
+<li>Мод <a href="https://www.curseforge.com/minecraft/mc-mods/particle-rain">Particle Rain</a>, улучшающий эффекты погоды.</li>
+<li>Мод <a href="https://modrinth.com/mod/show-operator-tab">Show Operator Tab</a>, включающий вкладку с командным блоком, палочкой отладки и светом в креативе без <code>/op</code>.</li>
+<li>Мод <a href="https://modrinth.com/mod/betterf3">Better F3</a> - цветные и более удобные панели F3.</li>
+<li>Мод <a href="https://modrinth.com/mod/auth-me">Auth Me</a> - добавляет в меню серверов кнопку смены аккаунта, не перезаходя в игру.</li>
+<li>Мод <a href="https://www.curseforge.com/minecraft/mc-mods/ydms-weapon-master">YDM's Weapon Master</a> - носите оружие и инструменты из хотбара на спине и поясе (на серверах требуется серверный мод). Настройки на клавише <span class="keys"><kbd class="key-comma">,</kbd></span>.</li>
+<li>Мод <a href="https://modrinth.com/mod/head-in-the-clouds">Head in the Clouds</a> - дождь больше не идёт над облаками.</li>
+</ul>
+<p><div style="opacity: 60%" markdown>
+<strong>Добавлено, но <a href="review/#enabling-mods" target="_blank">не активно</a> по умолчанию:</strong></p>
+<ul>
+<li>Ресурспак <a href="https://modrinth.com/resourcepack/default-style-winter-pack">Default-Style Winter Pack</a> - очень атмосферный ресурспак, глобально переводящий игру в снежную новогоднюю тематику.</li>
+<li>Ресурспак <a href="https://modrinth.com/resourcepack/redstone-tweaks">Redstone Tweaks</a> - незаменим при строительстве сложных механизмов.</li>
+<li>Мод <a href="https://modrinth.com/mod/slot-cycler">Slot Cycler</a> - включив его, вы сможете прокручивать с <span class="keys"><kbd class="key-alt">Alt</kbd></span> столбцы инвентаря в хотбаре.</li>
+<li>Мод <a href="https://modrinth.com/mod/ibe-editor">IBE Editor</a> - используйте интерфейс на <span class="keys"><kbd class="key-i">I</kbd></span> чтобы изменять NBT-данные.</li>
+<li>Мод <a href="https://modrinth.com/mod/physicsmod">Physics Mod Pro</a> - эстетичные физические явления.</li>
+<li>Мод <a href="https://modrinth.com/mod/vectorientation">Vectorientation</a> - мультяшные деформации блоков в полёте.</li>
+</ul>
+</div>
+<p><strong>Исправления, улучшения, обновления:</strong></p>
+<ul>
+<li>Из MiniHUD скрыты десятые доли координат.</li>
+<li>Некоторые моды и шейдеры обновлены до свежих версий.</li>
+<li>Небольшие изменения в ресурспаках. Что-то добавлено, что-то удалено.</li>
+<li>Удалён сломанный мод Fastload, вызывавший зависания при входе в мир и в повторах.</li>
+<li>Мод Litematica теперь отключен по умолчанию в лаунчере, так как не нужен большинству игроков. Также в <code>toolItem</code> переназначен с палки на тропическую рыбу.</li>
+<li>Меню репортов убрано с клавиши <span class="keys"><kbd class="key-p">P</kbd></span> и больше не мешает при проигрывании повторов.</li>
+<li>Перезагрузка шейдеров убрана с клавиши <span class="keys"><kbd class="key-r">R</kbd></span> - больше никаких мискликов и зависаний.</li>
+<li>В колесе эмоций Emotecraft теперь по умолчанию настроены некоторые эмоции.</li>
+<li>Smooth Swapping (мод на плавные перемещения предметов) больше не вызывает вылеты.</li>
+<li>Лучше отрегулирована громкость шагов.</li>
+<li>В настройках BSL погода сделана менее прозрачной.</li>
+</ul>
+</details>
+<details class="note">
+<summary>Версия 1.1.0</summary>
+<p><strong>Скачать:</strong> <a href="https://drive.google.com/file/d/1IRVC0J24NBtNDHVKknU65fxlYHZhapOx/view?usp=sharing" target="_blank">OUTBREAK 1.1.0.mrpack</a></p>
+<p><strong>Изменения:</strong></p>
+<p>Ну и ну, это было так давно, что никто уже не вспомнит точно, что здесь было! Вот примерный список изменений:</p>
+<p><strong>Новое:</strong></p>
+<ul>
+<li>Мод <a href="https://modrinth.com/mod/switcher">Swticher</a> - доступ к меню выбора режима игры без <code>/op</code>.</li>
+<li>Мод <a href="https://modrinth.com/mod/emoji-type">Emoji Type</a> - ввод эмоджи в чат при помощи <code>:</code>.</li>
+<li>Мод <a href="https://www.curseforge.com/minecraft/mc-mods/extrasounds">ExtraSounds</a> - приятные звуки при действиях с инвентарём.</li>
+<li>Мод <a href="https://modrinth.com/mod/shoulder-surfing-reloaded">Shoulder Surfing Reloaded</a>, добавляющий новый настраиваемый режим камеры из-за плеча.</li>
+<li>Ресурспак <a href="https://kabanfriends.github.io/minecraft/misaki2/">MisakiGothic2​forMC</a> на более стильные японские символы.</li>
+</ul>
+<p><strong>Исправления, улучшения, обновления:</strong></p>
+<ul>
+<li>Изменены цвета экрана загрузки.</li>
+<li>Обновлена текстура кнопки OUTBREAK, и она больше не выглядит кривой.</li>
+<li>Некоторые моды обновлены до последних версий.</li>
+<li>Убран мод Suggestion Tweaker, ломающий подсказки команд.</li>
+<li>Ваш компьютер больше не взорвётся при запуске сборки. Мы отключили шейдеры по умолчанию.</li>
+</ul>
+</details>
+<details class="note">
+<summary>Версия 1.0.0</summary>
+<p>Скачать: <a href="https://drive.google.com/file/d/1H178GhOcfJsAF2ZDGMz5xyxs00h3u-pr/view?usp=sharing" target="_blank">OUTBREAK 1.0.0.mrpack</a></p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/outbreak-mc" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/fhgkRff" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://vk.com/outbreak_mc" target="_blank" rel="noopener" title="vk.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M31.49 63.49C0 94.982 0 145.672 0 247.04v17.92c0 101.369 0 152.059 31.49 183.549C62.982 480 113.672 480 215.04 480h17.92c101.369 0 152.059 0 183.549-31.491C448 417.019 448 366.329 448 264.96v-17.92c0-101.369 0-152.059-31.491-183.55C385.019 32 334.329 32 232.96 32h-17.92C113.671 32 62.981 32 31.49 63.49ZM75.6 168.268h51.147c1.68 85.493 39.386 121.706 69.253 129.173V168.267h48.16V242c29.493-3.173 60.48-36.773 70.933-73.733h48.16a142.258 142.258 0 0 1-65.52 92.96 147.348 147.348 0 0 1 76.72 93.52H321.44a92.154 92.154 0 0 0-77.28-66.64v66.64h-5.787c-102.106 0-160.346-70-162.773-186.48Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.instant.progress", "navigation.table", "navigation.indexes", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
