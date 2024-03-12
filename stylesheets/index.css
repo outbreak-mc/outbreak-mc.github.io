@@ -1,0 +1,199 @@
+@font-face {
+  font-family: BIOWEAPON;
+  src: url(../assets/fonts/BIOWEAPON.ttf);
+}
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url(../assets/fonts/PressStart2P-Regular.ttf);
+}
+
+a.img-btn {
+  position: relative;
+  background: var(--bg);
+  background-size: cover;
+  background-position: center;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.7em;
+  border-radius: 1em;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: box-shadow .2s ease-in-out;
+}
+
+a.img-btn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+a.img-btn:hover,
+.social-cards a:hover {
+  box-shadow: 0 5px 20px #0000002c;
+  color: #ffffffb6;
+  outline: 2px solid #fff;
+}
+
+a.img-btn h1,
+a.img-btn p {
+  color: #fff;
+  margin: 0;
+}
+
+.social-cards {
+  /* margin: 1rem 0; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+@media screen and (max-width:600px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:470px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+
+
+.soc-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 1em;
+  padding: .8em;
+  background: var(--bg);
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  width: 6em;
+  height: 6em;
+}
+
+.soc-card svg {
+  width: 35px;
+}
+
+.soc-card p {
+  font-size: 0.6rem;
+  margin: 0;
+  line-height: normal;
+}
+
+.outbreak-title {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.outbreak-title h1,
+.outbreak-title p {
+  text-align: center;
+  line-height: normal;
+  margin: 0;
+  color: #fff;
+}
+
+.outbreak-title p {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+}
+
+.outbreak-title h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 6vw;
+  text-shadow: 0 0 10px #fff;
+  letter-spacing: .3em;
+}
+
+@media screen and (max-width:1100px) {
+  .outbreak-title h1 {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .outbreak-title {
+    margin-bottom: 1em;
+  }
+
+  .outbreak-title h1 {
+    font-size: 12vw;
+  }
+
+  .social-cards {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  }
+
+  .soc-card {
+    width: 100%;
+    padding: .8em .1em;
+  }
+
+  a.img-btn {
+    padding: 2em;
+  }
+
+  a.img-btn h1 {
+    font-size: 1.5em;
+  }
+}
+
+
+.fixed-bg {
+  /* filter: blur(20px); */
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: scroll;
+  user-select: none;
+  pointer-events: none;
+
+  /*custom styles, for example grayscale appearance*/
+  /* filter: grayscale(0.8); */
+
+  /*additional tweaks for positioning, read more in the link above*/
+  height: 99%;
+  width: 100%;
+  z-index: -1;
+}
+
+.fixed-bg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.md-grid {
+  max-width: 73rem;
+}
